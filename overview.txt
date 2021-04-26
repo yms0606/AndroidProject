@@ -1,2 +1,7 @@
 "Overview, git Test"
 "test 2"
+git add overview.txt(파일 이름)
+git commit -m "test commit"  (처음)
+git commit -am "test commit2" (두번째부터)
+git push -u origin master (처음)
+git push(두번째부터)
