@@ -5,58 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/korea_map">
+    android:background="@drawable/koreamap">
 
     <Button
-        android:backgroundTint="#fff"
-        android:textColor="#000"
-        android:id="@+id/button1"
+        android:id="@+id/BtSeoul"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#fff"
         android:text="서울"
-        android:textSize="6dp"
+        android:textColor="#000"
+        android:textSize="6sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:backgroundTint="#fff"
-        android:textColor="#000"
-        android:id="@+id/button2"
+        android:id="@+id/BtBusan"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="268dp"
-        android:layout_marginTop="432dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="424dp"
+        android:backgroundTint="#fff"
         android:text="부산"
-        android:textSize="6dp"
+        android:textColor="#000"
+        android:textSize="6sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:backgroundTint="#fff"
-        android:textColor="#000"
-        android:id="@+id/button3"
+        android:id="@+id/BtGangown"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="236dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="#fff"
         android:text="강원"
-        android:textSize="5dp"
+        android:textColor="#000"
+        android:textSize="6sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:backgroundTint="#fff"
-        android:textColor="#000"
-        android:id="@+id/button4"
+        android:id="@+id/BtJunju"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="#fff"
         android:text="전주"
-        android:textSize="6dp"
+        android:textColor="#000"
+        android:textSize="6sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtGyeonggi"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="#fff"
+        android:text="전주"
+        android:textColor="#000"
+        android:textSize="6sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
