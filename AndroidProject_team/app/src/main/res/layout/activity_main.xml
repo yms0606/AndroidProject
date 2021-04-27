@@ -15,7 +15,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="140dp"
         android:layout_marginTop="128dp"
-        android:text="Seoul"
+        android:text="서울"
         android:textSize="6dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="268dp"
         android:layout_marginTop="432dp"
-        android:text="Busan"
+        android:text="부산"
         android:textSize="6dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +41,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="236dp"
         android:layout_marginTop="108dp"
-        android:text="Gangown"
+        android:text="강원"
         android:textSize="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -54,7 +54,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="160dp"
         android:layout_marginTop="372dp"
-        android:text="Junju"
+        android:text="전주"
         android:textSize="6dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
