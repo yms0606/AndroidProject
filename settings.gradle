@@ -1,8 +1,2 @@
-dependencyResolutionManagement {
-    repositories {
-        google()
-        jcenter()
-    }
-}
-rootProject.name = "AndroidProject_team"
 include ':app'
+rootProject.name = "mpteampj"
