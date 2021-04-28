@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/jeonju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="#fff"
+            android:text="전주"
+            android:textColor="#000"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/yeosu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="430dp"
+            android:backgroundTint="#fff"
+            android:text="여수"
+            android:textColor="#000"
+            android:textSize="10dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/jeollamap" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
