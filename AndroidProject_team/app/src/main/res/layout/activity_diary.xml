@@ -44,28 +44,32 @@
     </LinearLayout>
 
     <EditText
-        android:hint="title"
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:hint="text"
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:lines="10"
+        android:layout_margin="10dp"
+        android:hint="title" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="text"
         android:inputType="textMultiLine"
-        android:scrollHorizontally="false"
-        android:minWidth="10.0dip"
+        android:lines="10"
         android:maxWidth="5.0dip"
-        android:layout_margin="10dp"/>
+        android:minWidth="10.0dip"
+        android:scrollHorizontally="false" />
+
     <Button
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:backgroundTint="#fff"
-        android:textColor="#000"
-        android:text="save"
+        android:id="@+id/save"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#fff"
+        android:gravity="center"
+        android:text="save"
+        android:textColor="#000" />
 </LinearLayout>
