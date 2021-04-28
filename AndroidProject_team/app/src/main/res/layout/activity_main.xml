@@ -8,6 +8,19 @@
     android:background="@drawable/koreamap">
 
     <Button
+        android:id="@+id/BtChungcheong"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="296dp"
+        android:backgroundTint="#fff"
+        android:text="충청"
+        android:textColor="#000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/BtSeoul"
         android:layout_width="60dp"
         android:layout_height="50dp"
@@ -16,20 +29,20 @@
         android:backgroundTint="#fff"
         android:text="서울"
         android:textColor="#000"
-        android:textSize="6sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/BtBusan"
+        android:id="@+id/BtGyeongsang"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="424dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="408dp"
         android:backgroundTint="#fff"
-        android:text="부산"
+        android:text="경상"
         android:textColor="#000"
-        android:textSize="6sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,20 +55,20 @@
         android:backgroundTint="#fff"
         android:text="강원"
         android:textColor="#000"
-        android:textSize="6sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/BtJunju"
+        android:id="@+id/BtJeolla"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="408dp"
         android:backgroundTint="#fff"
-        android:text="전주"
+        android:text="전라"
         android:textColor="#000"
-        android:textSize="6sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,7 +81,7 @@
         android:backgroundTint="#fff"
         android:text="경기"
         android:textColor="#000"
-        android:textSize="6sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
