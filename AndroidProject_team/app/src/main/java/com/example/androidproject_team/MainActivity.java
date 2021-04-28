@@ -14,10 +14,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btSeoul = findViewById(R.id.BtSeoul);
-        Button btGang = findViewById(R.id.BtGangown);
-        Button btGyeong = findViewById(R.id.BtGyeonggi);
-        Button btJunju = findViewById(R.id.BtJunju);
-        Button btBusan = findViewById(R.id.BtBusan);
+        Button btGangown = findViewById(R.id.BtGangown);
+        Button btGyeonggi = findViewById(R.id.BtGyeonggi);
+        Button btJeolla = findViewById(R.id.BtJeolla);
+        Button btGyeongsang = findViewById(R.id.BtGyeongsang);
+        Button btChungcheong = findViewById(R.id.BtChungcheong);
 
         btSeoul.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,31 +27,40 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btBusan.setOnClickListener(new View.OnClickListener() {
+        btGyeongsang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),BusanActivity.class);
+                Intent intent = new Intent(getApplicationContext(), GyeongsangActivity.class);
                 startActivity(intent);
             }
         });
-        btGang.setOnClickListener(new View.OnClickListener() {
+        btGangown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),GangownActivity.class);
                 startActivity(intent);
             }
         });
-        btGyeong.setOnClickListener(new View.OnClickListener() {
+
+        btGyeonggi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),GyeonggiActivity.class);
                 startActivity(intent);
             }
         });
-        btJunju.setOnClickListener(new View.OnClickListener() {
+        btJeolla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),JunjuActivity.class);
+                Intent intent = new Intent(getApplicationContext(), JeollaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btChungcheong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ChungcheongActivity.class);
                 startActivity(intent);
             }
         });
