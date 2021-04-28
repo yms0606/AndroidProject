@@ -6,4 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".GangownActivity">
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="600dp"
+            android:layout_height="600dp"
+            android:src="@drawable/gangownmap" />
+
+        <Button
+            android:id="@+id/gang"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="240dp"
+            android:backgroundTint="#fff"
+            android:text="강릉"
+            android:textColor="#000"
+            android:textSize="10dp" />
+        <Button
+            android:id="@+id/shokcho"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="300dp"
+            android:backgroundTint="#fff"
+            android:text="속초"
+            android:textColor="#000"
+            android:textSize="12dp" />
+        <Button
+            android:id="@+id/cheorown"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="#fff"
+            android:text="철원"
+            android:textColor="#000"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
