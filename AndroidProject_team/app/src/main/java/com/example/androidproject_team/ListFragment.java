@@ -49,19 +49,44 @@ public class ListFragment extends Fragment {
                              Bundle savedInstanceState) {
         ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_list,container,false);
 
-        recyclerView = viewGroup.findViewById(R.id.recyclerview);
+                recyclerView = viewGroup.findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
+
         mdata = new ArrayList<>();
+
         adapter = new MyAdapter(mdata);
         recyclerView.setAdapter(adapter);
 
-        mdata.add(new Mdata("1 index",R.drawable.index1));
-        mdata.add(new Mdata("2 index",R.drawable.index2));
-        mdata.add(new Mdata("3 index",R.drawable.index1));
-        mdata.add(new Mdata("4 index",R.drawable.index2));
-        mdata.add(new Mdata("5 index",R.drawable.index1));
+
+        mdata.add(new Mdata("속초 해수욕장",R.drawable.sokcho_beach));
+        mdata.add(new Mdata("속초 동명항",R.drawable.sokcho_dongmyeongport));
+        mdata.add(new Mdata("속초 엑스포타워",R.drawable.sokcho_expotower));
+        mdata.add(new Mdata("속초 영금정",R.drawable.sokcho_yeonggeumjeong));
+
+//        gangwon.add(new Mdata("5 index",R.drawable.gangneung_anbandegi));
+//        gangwon.add(new Mdata("5 index",R.drawable.gangneung_goblindrama));
+//        gangwon.add(new Mdata("5 index",R.drawable.gangneung_hasllaartworld));
+//        gangwon.add(new Mdata("5 index",R.drawable.gangneung_jeongdongjin_rail));
+//
+//        gangwon.add(new Mdata("5 index",R.drawable.pyeongchang_animalfarm));
+//        gangwon.add(new Mdata("5 index",R.drawable.pyeongchang_artmuseum));
+//        gangwon.add(new Mdata("5 index",R.drawable.pyeongchang_sheep));
+//        gangwon.add(new Mdata("5 index",R.drawable.pyeongchang_skywalk));
+
+//        wonju.add(new Mdata("5 index",R.drawable.wonju_bridge));
+//        wonju.add(new Mdata("5 index",R.drawable.wonju_museummountain));
+//        wonju.add(new Mdata("5 index",R.drawable.wonju_railpark));
+//        wonju.add(new Mdata("5 index",R.drawable.wonju_restaurant1));
+//
+//        gangwon.add(new Mdata("5 index",R.drawable.inje_forest));
+//        gangwon.add(new Mdata("5 index",R.drawable.inje_secretofgarden));
+//        gangwon.add(new Mdata("5 index",R.drawable.inje_xgameresort));
+//        gangwon.add(new Mdata("5 index",R.drawable.inje_classiccar));
+
+
+
         return viewGroup;
     }
 }
