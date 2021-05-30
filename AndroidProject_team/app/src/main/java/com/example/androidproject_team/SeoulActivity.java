@@ -22,5 +22,30 @@ public class SeoulActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btGeondae = findViewById(R.id.geondae);
+        btGeondae.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button btNamsan = findViewById(R.id.namsan);
+        btNamsan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button btGangnam = findViewById(R.id.gangnam);
+        btGangnam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
