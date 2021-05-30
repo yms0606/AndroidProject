@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GangownActivity">
+    tools:context=".GangwonActivity">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -16,10 +16,10 @@
         <ImageView
             android:layout_width="600dp"
             android:layout_height="600dp"
-            android:src="@drawable/gangownmap" />
+            android:src="@drawable/gangwonmap" />
 
         <Button
-            android:id="@+id/gang"
+            android:id="@+id/gangneung"
             android:layout_width="77dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="210dp"
@@ -28,8 +28,9 @@
             android:text="강릉"
             android:textColor="#000"
             android:textSize="10dp" />
+
         <Button
-            android:id="@+id/shokcho"
+            android:id="@+id/sokcho"
             android:layout_width="77dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="250dp"
@@ -38,16 +39,40 @@
             android:text="속초"
             android:textColor="#000"
             android:textSize="12dp" />
+
         <Button
-            android:id="@+id/cheorown"
+            android:id="@+id/inje"
             android:layout_width="77dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="350dp"
+            android:backgroundTint="#fff"
+            android:text="인제"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/wonju"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="400dp"
+            android:backgroundTint="#fff"
+            android:text="원주"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/pyeongchang"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="123dp"
             android:layout_marginTop="200dp"
             android:backgroundTint="#fff"
-            android:text="철원"
+            android:text="평창"
             android:textColor="#000"
-            android:textSize="12dp"/>
+            android:textSize="12dp"
+            />
 
     </RelativeLayout>
 
