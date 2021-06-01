@@ -25,17 +25,17 @@
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
-        android:layout_marginTop="50dp"
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="500dp" />
+        android:layout_height="607dp"
+        android:layout_marginTop="50dp" />
 
     <Button
-        android:layout_marginTop="550dp"
         android:id="@+id/write"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="160dp"
+        android:layout_marginTop="670dp"
         android:backgroundTint="#fff"
         android:text="기록"
         android:textColor="#000" />
