@@ -1,8 +1,10 @@
 package com.example.androidproject_team;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("국내 지도");
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xFF87CEFA));
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.hide();
+
         Button btSeoul = findViewById(R.id.BtSeoul);
         Button btGangown = findViewById(R.id.BtGangown);
         Button btGyeonggi = findViewById(R.id.BtGyeonggi);
@@ -37,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         btGangown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),GangownActivity.class);
+                Intent intent = new Intent(getApplicationContext(), GangwonActivity.class);
                 startActivity(intent);
             }
         });

@@ -2,7 +2,10 @@ package com.example.androidproject_team;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class GyeongsangActivity extends AppCompatActivity {
 
@@ -10,7 +13,9 @@ public class GyeongsangActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gyeongsang);
-        
+        getSupportActionBar().setTitle("경상도");
+
+
         Button btBusan = findViewById(R.id.busan);
         btBusan.setOnClickListener(new View.OnClickListener() {
             @Override

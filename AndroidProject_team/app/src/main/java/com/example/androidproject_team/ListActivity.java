@@ -27,6 +27,7 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+        getSupportActionBar().setTitle("List, Quest, Todo");
 
         viewPager = findViewById(R.id.viewpager);
         tab = findViewById(R.id.tabLayout);
@@ -36,7 +37,6 @@ public class ListActivity extends AppCompatActivity {
         vPadapter.addFrag(new TodoFragment(),"Todo");
         viewPager.setAdapter(vPadapter);
         tab.setupWithViewPager(viewPager);
-
 
 
         /*recyclerView = findViewById(R.id.recyclerview);
@@ -59,8 +59,9 @@ public class ListActivity extends AppCompatActivity {
         btWrite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),DiaryActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MemoList.class);
                 startActivity(intent);
+
             }
         });
     }

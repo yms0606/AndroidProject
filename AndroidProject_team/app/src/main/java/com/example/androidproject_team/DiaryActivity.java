@@ -1,24 +1,37 @@
 package com.example.androidproject_team;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 public class DiaryActivity extends AppCompatActivity {
     private static final int REQUEST_CODE = 0;
@@ -26,10 +39,12 @@ public class DiaryActivity extends AppCompatActivity {
     String shared = "file";
     EditText title, content;
     int i = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diary);
+        getSupportActionBar().setTitle("다이어리 작성");
 
         img1 = findViewById(R.id.img1);
         img2 = findViewById(R.id.img2);
@@ -80,34 +95,67 @@ public class DiaryActivity extends AppCompatActivity {
 
         title = (EditText)findViewById(R.id.title);
         content = (EditText)findViewById(R.id.content);
-//        save.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View view) {
 //
+//        Intent intent = getIntent();
+//        String got_title = intent.getStringExtra("title");
+//        String got_contents = intent.getStringExtra("content");
+//
+//        Button save_btn = (Button)findViewById(R.id.save);
+//
+//        title.setText(got_title);
+//        content.setText(got_contents);
+//
+//        save_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent();
+//                String got_title = title.getText().toString();
+//                String got_content = content.getText().toString();
+//                setResult(RESULT_OK, intent);
+//                finish();
 //            }
 //        });
 
+
+        //////////////
         SharedPreferences sharedPreferences = getSharedPreferences(shared, 0);
+
         String value1 = sharedPreferences.getString("txttitle", "");
         String value2 = sharedPreferences.getString("txtcontent", "");
+//
+//        title.setText(value1);
+//        content.setText(value2);
+        Button save_btn = (Button)findViewById(R.id.save);
+
+        save_btn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                finish();
+            }
+        });
 
         title.setText(value1);
         content.setText(value2);
 
-
-
-
     }
+
+
+
+
 
     protected void onDestroy() {
         super.onDestroy();
         SharedPreferences sharedPreferences = getSharedPreferences(shared, 0);
         SharedPreferences.Editor editor = sharedPreferences.edit();
+
         String value1 = title.getText().toString();
         String value2 = content.getText().toString();
+
         editor.putString("txttitle", value1);
         editor.putString("txtcontent", value2);
 
         editor.commit();
+
     }
 
 

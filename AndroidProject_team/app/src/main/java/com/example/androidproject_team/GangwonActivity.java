@@ -7,40 +7,49 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SeoulActivity extends AppCompatActivity {
+public class GangwonActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seoul);
-        getSupportActionBar().setTitle("서울");
+        setContentView(R.layout.activity_gangown);
+        getSupportActionBar().setTitle("강원도");
 
-        Button btHondae = findViewById(R.id.hongdae);
-        btHondae.setOnClickListener(new View.OnClickListener() {
+        Button btGangneung = findViewById(R.id.gangneung);
+        btGangneung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
                 startActivity(intent);
             }
         });
-        Button btGeondae = findViewById(R.id.geondae);
-        btGeondae.setOnClickListener(new View.OnClickListener() {
+        Button btSokcho = findViewById(R.id.sokcho);
+        btSokcho.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        Button btInje = findViewById(R.id.inje);
+        btInje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
                 startActivity(intent);
             }
         });
-        Button btNamsan = findViewById(R.id.namsan);
-        btNamsan.setOnClickListener(new View.OnClickListener() {
+        Button btPyeongchang = findViewById(R.id.pyeongchang);
+        btPyeongchang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
                 startActivity(intent);
             }
         });
-        Button btGangnam = findViewById(R.id.gangnam);
-        btGangnam.setOnClickListener(new View.OnClickListener() {
+        Button btWonju = findViewById(R.id.wonju);
+        btWonju.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);

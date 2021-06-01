@@ -2,7 +2,10 @@ package com.example.androidproject_team;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class GyeonggiActivity extends AppCompatActivity {
 
@@ -10,7 +13,8 @@ public class GyeonggiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gyeonggi);
-        
+        getSupportActionBar().setTitle("경기도");
+
         Button btSuwonhwasung = findViewById(R.id.suwonhwasung);
         btSuwonhwasung.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,5 +31,9 @@ public class GyeonggiActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
     }
+
 }
