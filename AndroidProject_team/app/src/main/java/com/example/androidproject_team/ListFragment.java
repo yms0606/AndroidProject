@@ -166,7 +166,7 @@ public class ListFragment extends Fragment {
             mdata.add(new Mdata("해운대 ", R.drawable.busan_haeundae));
             mdata.add(new Mdata("장림포구 ", R.drawable.busan_jangnimpogu));
             mdata.add(new Mdata("남포동 트리 ", R.drawable.busan_nampodong));
-            mdata.add(new Mdata("을숟고 생태공원", R.drawable.busan_park));
+            mdata.add(new Mdata("을숙도 생태공원", R.drawable.busan_park));
             mdata.add(new Mdata("더베이 ", R.drawable.busan_thebey));
 
         }
