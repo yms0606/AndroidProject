@@ -77,11 +77,11 @@ public class DiarylistActivity extends AppCompatActivity {
     public void selectCode(int code){
         switch (code){
             case 1: place = "강릉"; break; case 2: place = "속초"; break; case 3: place = "인제"; break;
-            case 4: place = "평창"; break; case 5: place = "원주"; break; case 6: place = "홍대"; break;
-            case 7: place = "건대"; break; case 8: place = "남산"; break; case 9: place = "강남"; break;
-            case 10: place = "수원화성"; break; case 11: place = "전망대"; break; case 12: place = "부산"; break;
-            case 13: place = "대구"; break; case 14: place = "울산"; break; case 15: place = "전주"; break;
-            case 16: place = "여수"; break;
+            case 4: place = "평창"; break; case 5: place = "원주"; break; case 6: place = "송파"; break;
+            case 7: place = "강남"; break; case 8: place = "중구"; break; case 9: place = "종로"; break;
+            case 10: place = "파주"; break; case 11: place = "광명"; break; case 12: place = "포천"; break;
+            case 13: place = "안산"; break; case 14: place = "충남"; break; case 15: place = "세종"; break;
+            case 16: place = "충북"; break;
         }
     }
 }
