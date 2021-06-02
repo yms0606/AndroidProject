@@ -52,21 +52,17 @@ public class MemoList extends AppCompatActivity {
         getSupportActionBar().setTitle("다이어리");
 
 
-
-
         items = new ArrayList<String>();
 
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
 
         listView = (ListView) findViewById(R.id.listview);
-        listView.setAdapter(adapter);
-
-        listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-
         editText = (EditText)findViewById(R.id.editText);
         btnAdd = (Button)findViewById(R.id.btnAdd);
-
         btnDel = (Button)findViewById(R.id.btnDel);
+
+        listView.setAdapter(adapter);
+        listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
         btnAdd.setOnClickListener(listener);
         btnDel.setOnClickListener(listener);

@@ -3,6 +3,7 @@ package com.example.androidproject_team;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -12,7 +13,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.text.Editable;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -31,14 +36,18 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 
 public class DiaryActivity extends AppCompatActivity {
     private static final int REQUEST_CODE = 0;
     private ImageView img1,img2,img3,img4;
-    String shared = "file";
+    private Uri uri1,uri2,uri3,uri4;
+    private UserRepository userRepository;
     EditText title, content;
-    int i = 0;
+    int i = 0,code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +59,19 @@ public class DiaryActivity extends AppCompatActivity {
         img2 = findViewById(R.id.img2);
         img3 = findViewById(R.id.img3);
         img4 = findViewById(R.id.img4);
+
+        Intent intent = getIntent();
+        code = intent.getIntExtra("listCode",1);
+
+        /*AppDatabase db = Room.databaseBuilder(getApplicationContext()
+                , AppDatabase.class, "db-mary").fallbackToDestructiveMigration()
+                .allowMainThreadQueries().build();
+        userRepository = db.userRepository();
+        List<Item> it = userRepository.findAll();
+        //Log.d("size",it.get(0).getTitle() + " "+it.get(0).getText());
+        //userRepository.delete(it.get(0));
+        Log.d("size",String.valueOf(it.size()));
+        */
 
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,72 +117,50 @@ public class DiaryActivity extends AppCompatActivity {
 
         title = (EditText)findViewById(R.id.title);
         content = (EditText)findViewById(R.id.content);
-//
-//        Intent intent = getIntent();
-//        String got_title = intent.getStringExtra("title");
-//        String got_contents = intent.getStringExtra("content");
-//
-//        Button save_btn = (Button)findViewById(R.id.save);
-//
-//        title.setText(got_title);
-//        content.setText(got_contents);
-//
-//        save_btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent();
-//                String got_title = title.getText().toString();
-//                String got_content = content.getText().toString();
-//                setResult(RESULT_OK, intent);
-//                finish();
-//            }
-//        });
 
-
-        //////////////
-        SharedPreferences sharedPreferences = getSharedPreferences(shared, 0);
-
-        String value1 = sharedPreferences.getString("txttitle", "");
-        String value2 = sharedPreferences.getString("txtcontent", "");
-//
-//        title.setText(value1);
-//        content.setText(value2);
         Button save_btn = (Button)findViewById(R.id.save);
 
         save_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                finish();
+                if(title.getText().toString().length() !=0 && content.getText().toString().length() !=0) {
+                    AppDatabase db = Room.databaseBuilder(getApplicationContext()
+                            , AppDatabase.class, "db-mary").fallbackToDestructiveMigration()
+                            .allowMainThreadQueries().build();
+                    userRepository = db.userRepository();
+
+                    Item item = new Item(title.getText().toString(), content.getText().toString());
+                    if(uri1 != null)
+                        item.setImg1(uri1.toString());
+                    else
+                        item.setImg1(" ");
+                    if(uri2 != null)
+                        item.setImg2(uri2.toString());
+                    else
+                        item.setImg2(" ");
+                    if(uri3 != null)
+                        item.setImg3(uri3.toString());
+                    else
+                        item.setImg3(" ");
+                    if(uri4 != null)
+                        item.setImg4(uri4.toString());
+                    else
+                        item.setImg4(" ");
+
+                    Log.d("uri",item.getImg1()+"/"+item.getImg2()
+                            +"/"+item.getImg3()+"/"+item.getImg4());
+
+                    item.setCode(code);
+                    userRepository.insert(item);
+                    finish();
+                }
+                else
+                    Toast.makeText(getApplicationContext(),"공백이 있습니다.",Toast.LENGTH_LONG).show();
             }
         });
 
-        title.setText(value1);
-        content.setText(value2);
 
     }
-
-
-
-
-
-    protected void onDestroy() {
-        super.onDestroy();
-        SharedPreferences sharedPreferences = getSharedPreferences(shared, 0);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-
-        String value1 = title.getText().toString();
-        String value2 = content.getText().toString();
-
-        editor.putString("txttitle", value1);
-        editor.putString("txtcontent", value2);
-
-        editor.commit();
-
-    }
-
-
-
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -175,13 +175,21 @@ public class DiaryActivity extends AppCompatActivity {
 
                     switch(i) {
                         case 1:
-                            img1.setImageBitmap(img);break;
+                            img1.setImageBitmap(img);
+                            uri1 = data.getData();
+                            break;
                         case 2:
-                            img2.setImageBitmap(img);break;
+                            img2.setImageBitmap(img);
+                            uri2 = data.getData();
+                            break;
                         case 3:
-                            img3.setImageBitmap(img);break;
+                            img3.setImageBitmap(img);
+                            uri3 = data.getData();
+                            break;
                         case 4:
-                            img4.setImageBitmap(img);break;
+                            uri4 = data.getData();
+                            img4.setImageBitmap(img);
+                            break;
                         default: break;
                     }
                 }catch (Exception e){}

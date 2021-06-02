@@ -1,5 +1,5 @@
 
-package com.example.myapplication;
+package com.example.androidproject_team;
 
 import android.os.Bundle;
 import android.text.Editable;

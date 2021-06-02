@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.AndroidProject_team" parent="Theme.AppCompat.Light">
         <!-- Primary brand color. -->
-<!--        <item name="colorPrimary">@color/purple_500</item>-->
-<!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+        <!--        <item name="colorPrimary">@color/purple_500</item>-->
+        <!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
         <item name="colorPrimary">#B0E0E6</item>
         <item name="colorPrimaryDark">#4682B4</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -15,4 +15,13 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.AndroidProject_team.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AndroidProject_team.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AndroidProject_team.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

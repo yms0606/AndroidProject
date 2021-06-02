@@ -20,6 +20,7 @@ public class GyeonggiActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",10);
                 startActivity(intent);
             }
         });
@@ -28,6 +29,7 @@ public class GyeonggiActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",11);
                 startActivity(intent);
             }
         });

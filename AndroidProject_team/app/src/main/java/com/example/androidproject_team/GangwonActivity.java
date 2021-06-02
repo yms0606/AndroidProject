@@ -20,6 +20,7 @@ public class GangwonActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",1);
                 startActivity(intent);
             }
         });
@@ -28,6 +29,7 @@ public class GangwonActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",2);
                 startActivity(intent);
 
             }
@@ -37,6 +39,7 @@ public class GangwonActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",3);
                 startActivity(intent);
             }
         });
@@ -45,6 +48,7 @@ public class GangwonActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",4);
                 startActivity(intent);
             }
         });
@@ -53,6 +57,7 @@ public class GangwonActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",5);
                 startActivity(intent);
             }
         });

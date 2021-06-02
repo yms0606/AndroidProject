@@ -21,6 +21,7 @@ public class GyeongsangActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",12);
                 startActivity(intent);
             }
         });
@@ -29,6 +30,7 @@ public class GyeongsangActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",13);
                 startActivity(intent);
             }
         });
@@ -37,6 +39,7 @@ public class GyeongsangActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",14);
                 startActivity(intent);
             }
         });

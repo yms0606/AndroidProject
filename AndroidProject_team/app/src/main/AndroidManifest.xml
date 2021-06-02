@@ -9,21 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProject_team">
-        <activity android:name=".DiaryActivity"></activity>
+        <activity android:name=".ListdetailActivity"></activity>
+        <activity android:name=".DiarylistActivity" />
+        <activity android:name=".DiaryActivity" />
         <activity android:name=".ListActivity" />
         <activity android:name=".JeollaActivity" />
         <activity android:name=".GyeonggiActivity" />
-        <activity android:name=".GangownActivity" />
-        <activity android:name=".GyongsangActivity" />
+        <activity android:name=".GyeongsangActivity" />
         <activity android:name=".ChungcheongActivity" />
         <activity android:name=".SeoulActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".GangwonActivity" />
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

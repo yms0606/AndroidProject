@@ -20,6 +20,7 @@ public class SeoulActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",6);
                 startActivity(intent);
             }
         });
@@ -28,6 +29,7 @@ public class SeoulActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",7);
                 startActivity(intent);
             }
         });
@@ -36,6 +38,7 @@ public class SeoulActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",8);
                 startActivity(intent);
             }
         });
@@ -44,6 +47,7 @@ public class SeoulActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",9);
                 startActivity(intent);
             }
         });

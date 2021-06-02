@@ -16,52 +16,57 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 
 public class ListActivity extends AppCompatActivity {
-    //RecyclerView recyclerView;
-    //RecyclerView.Adapter adapter;
-    //RecyclerView.LayoutManager manager;
-    //ArrayList<Mdata> mdata;
+
+    ListFragment listFragment;
     ViewPager viewPager;
     VPadapter vPadapter;
     TabLayout tab;
+    int code;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
         getSupportActionBar().setTitle("List, Quest, Todo");
 
+        listFragment = new ListFragment();
+
+        Intent intent = getIntent();
+        code = intent.getIntExtra("listCode",0);
+
+        Bundle bundle = new Bundle();
+        bundle.putInt("listCode",code);
+        listFragment.setArguments(bundle);
+
         viewPager = findViewById(R.id.viewpager);
         tab = findViewById(R.id.tabLayout);
+
         vPadapter = new VPadapter(getSupportFragmentManager());
-        vPadapter.addFrag(new ListFragment(),"List");
+        vPadapter.addFrag(listFragment,"List");
         vPadapter.addFrag(new QuestFragment(),"Quest");
         vPadapter.addFrag(new TodoFragment(),"Todo");
+
         viewPager.setAdapter(vPadapter);
         tab.setupWithViewPager(viewPager);
 
 
-        /*recyclerView = findViewById(R.id.recyclerview);
-        recyclerView.setHasFixedSize(true);
-        manager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(manager);
-
-        mdata = new ArrayList<>();
-        adapter = new MyAdapter(mdata);
-        recyclerView.setAdapter(adapter);
-
-        mdata.add(new Mdata("1 index",R.drawable.index1));
-        mdata.add(new Mdata("2 index",R.drawable.index2));
-        mdata.add(new Mdata("3 index",R.drawable.index1));
-        mdata.add(new Mdata("4 index",R.drawable.index2));
-        mdata.add(new Mdata("5 index",R.drawable.index1));
-        */
 
         Button btWrite = findViewById(R.id.write);
         btWrite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MemoList.class);
+                Intent intent = new Intent(getApplicationContext(), DiaryActivity.class);
+                intent.putExtra("listCode",code);
                 startActivity(intent);
 
+            }
+        });
+        Button btgoList = findViewById(R.id.goList);
+        btgoList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),DiarylistActivity.class);
+                intent.putExtra("listCode",code);
+                startActivity(intent);
             }
         });
     }

@@ -20,6 +20,7 @@ public class JeollaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",15);
                 startActivity(intent);
             }
         });
@@ -29,6 +30,7 @@ public class JeollaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",16);
                 startActivity(intent);
             }
         });
