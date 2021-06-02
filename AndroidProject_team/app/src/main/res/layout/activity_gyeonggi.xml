@@ -20,26 +20,48 @@
             android:src="@drawable/gyeonggimap" />
 
         <Button
-            android:id="@+id/suwonhwasung"
+            android:id="@+id/paju"
             android:layout_width="77dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="340dp"
             android:backgroundTint="#fff"
-            android:text="수원화성"
+            android:text="파주"
             android:textColor="#000"
             android:textSize="10dp" />
 
         <Button
-            android:id="@+id/junmang"
+            android:id="@+id/gwangmyeong"
             android:layout_width="77dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="200dp"
             android:backgroundTint="#fff"
-            android:text="통일전망대"
+            android:text="광명"
             android:textColor="#000"
             android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/pocheon"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="90dp"
+            android:backgroundTint="#fff"
+            android:text="포천"
+            android:textColor="#000"
+            android:textSize="8dp"/>
+
+        <Button
+            android:id="@+id/ansan"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="240dp"
+            android:backgroundTint="#fff"
+            android:text="안산"
+            android:textColor="#000"
+            android:textSize="8dp"/>
 
     </RelativeLayout>
 

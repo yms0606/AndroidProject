@@ -29,6 +29,26 @@
             android:text="세종"
             android:textColor="#000"
             android:textSize="10dp" />
+        <Button
+            android:id="@+id/chungnam"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="180dp"
+            android:backgroundTint="#fff"
+            android:text="충남"
+            android:textColor="#000"
+            android:textSize="10dp" />
+        <Button
+            android:id="@+id/chungbuk"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3000dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="#fff"
+            android:text="충북"
+            android:textColor="#000"
+            android:textSize="10dp" />
 
     </RelativeLayout>
 

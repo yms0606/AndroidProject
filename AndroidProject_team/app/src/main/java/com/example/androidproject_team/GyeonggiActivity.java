@@ -15,8 +15,8 @@ public class GyeonggiActivity extends AppCompatActivity {
         setContentView(R.layout.activity_gyeonggi);
         getSupportActionBar().setTitle("경기도");
 
-        Button btSuwonhwasung = findViewById(R.id.suwonhwasung);
-        btSuwonhwasung.setOnClickListener(new View.OnClickListener() {
+        Button btPaju = findViewById(R.id.paju);
+        btPaju.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
@@ -24,8 +24,8 @@ public class GyeonggiActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button btJunmang = findViewById(R.id.junmang);
-        btJunmang.setOnClickListener(new View.OnClickListener() {
+        Button btgwanmyeong = findViewById(R.id.gwangmyeong);
+        btgwanmyeong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
@@ -33,7 +33,24 @@ public class GyeonggiActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        Button btPocheon = findViewById(R.id.pocheon);
+        btPocheon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",12);
+                startActivity(intent);
+            }
+        });
+        Button btAnsan = findViewById(R.id.ansan);
+        btAnsan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ListActivity.class);
+                intent.putExtra("listCode",13);
+                startActivity(intent);
+            }
+        });
 
 
     }

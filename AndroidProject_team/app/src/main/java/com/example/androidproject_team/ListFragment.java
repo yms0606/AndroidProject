@@ -1,6 +1,5 @@
 package com.example.androidproject_team;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -47,10 +45,10 @@ public class ListFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         // 1 - 강릉       2 - 속초      3 - 인제      4 - 평창      5 - 원주
-        // 6 - 홍대       7 - 건대      8 - 남산      9 - 강남
-        // 10 - 수원화성        11 - 전망대
-        // 12 - 부산      13 - 대구     14 - 울산
-        // 15 - 전주      16 - 여수
+        // 6 - 송파       7 - 강남      8 - 중구      9 - 종로
+        // 10 - 파주      11 - 광명     12 - 포천     13 - 안산
+        // 14 - 충남      15 - 세종     16 - 충북
+
         int code = getArguments().getInt("listCode");
         if(code==1){
             mdata.add(new Mdata("강릉 안반데기",R.drawable.gangneung_anbandegi));
@@ -82,6 +80,86 @@ public class ListFragment extends Fragment {
             mdata.add(new Mdata("원주 레일파크", R.drawable.wonju_railpark));
             mdata.add(new Mdata("원주 맛집 '운채'", R.drawable.wonju_restaurant1));
         }
+        else if(code == 6) {
+            mdata.add(new Mdata("송파구 팔각정", R.drawable.palgakjjong));
+            mdata.add(new Mdata("송파구 책보고", R.drawable.bookbogo));
+            mdata.add(new Mdata("송파구 롯데월드", R.drawable.lotteworld));
+            mdata.add(new Mdata("송파구 나홀로나무", R.drawable.tree));
+        }
+        else if(code == 7) {
+            mdata.add(new Mdata("봉은사", R.drawable.bongeunsa));
+            mdata.add(new Mdata("별마당 도서관", R.drawable.byolmadang));
+            mdata.add(new Mdata("가로수길", R.drawable.garosukkil));
+            mdata.add(new Mdata("피규어뮤지엄", R.drawable.figuremuseum));
+        }
+        else if(code == 8) {
+            mdata.add(new Mdata("덕수궁", R.drawable.deoksugung));
+            mdata.add(new Mdata("숭례문", R.drawable.sungnyemun));
+            mdata.add(new Mdata("청계광장", R.drawable.gwangjang));
+            mdata.add(new Mdata("남산케이블카", R.drawable.namsan));
+        }
+        else if(code == 9) {
+            mdata.add(new Mdata("북촌한옥마을", R.drawable.hanok));
+            mdata.add(new Mdata("종묘", R.drawable.jongmyo));
+            mdata.add(new Mdata("낙산공원", R.drawable.naksanpark));
+            mdata.add(new Mdata("쌈지길", R.drawable.ssamji));
+        }
+        else if(code == 10) {
+            mdata.add(new Mdata("마장호수 흔들다리", R.drawable.paju_majanglake));
+            mdata.add(new Mdata("퍼스트가든", R.drawable.firstgarden));
+            mdata.add(new Mdata("헤이리 예술마을", R.drawable.heyriartvillage));
+            mdata.add(new Mdata("벽초지수목원", R.drawable.sumogwon));
+        }
+        else if(code == 11) {
+            mdata.add(new Mdata("광명동굴", R.drawable.gwangmyeong_cave));
+            mdata.add(new Mdata("안터생태공원", R.drawable.gwangmyeong_park));
+            mdata.add(new Mdata("구름산", R.drawable.gwangmyeong_cloudmountain));
+            mdata.add(new Mdata("소하동 벽화마을", R.drawable.sohawall));
+        }
+        else if(code == 12) {
+            mdata.add(new Mdata("산정호수", R.drawable.pocheon_sanjeonglake));
+            mdata.add(new Mdata("평강랜드", R.drawable.pyeonggangland));
+            mdata.add(new Mdata("허브아일랜드", R.drawable.hubiland));
+            mdata.add(new Mdata("포천아트밸리", R.drawable.artvalley));
+        }
+        else if(code == 13) {
+            mdata.add(new Mdata("구봉도", R.drawable.gubongdo));
+            mdata.add(new Mdata("탄도항", R.drawable.tando));
+            mdata.add(new Mdata("대부바다향기테마파크", R.drawable.badapark));
+            mdata.add(new Mdata("별빛마을포토랜드", R.drawable.starphotoland));
+        }
+        else if(code == 14) {
+            mdata.add(new Mdata("예당호 출렁다리", R.drawable.chungnam_bridge));
+            mdata.add(new Mdata("꽃지해수욕장", R.drawable.chungnam_flowerbada));
+            mdata.add(new Mdata("코리아플라워파크", R.drawable.chungnam_flowerpark));
+            mdata.add(new Mdata("서산유기방가옥", R.drawable.chungnam_seosan_gaok));
+        }
+        else if(code == 15) {
+            mdata.add(new Mdata("베어트리파크", R.drawable.sejong_beartreepark));
+            mdata.add(new Mdata("국립세종수목원", R.drawable.sejongsumogwon));
+            mdata.add(new Mdata("세종호수공원", R.drawable.sejong_lakepark));
+            mdata.add(new Mdata("금강수목원", R.drawable.sejong_geumgang_arboretum));
+
+
+        }
+        else if(code == 16) {
+            mdata.add(new Mdata("충주라바랜드", R.drawable.chungbuk_labaland));
+            mdata.add(new Mdata("고수동굴", R.drawable.chungbuk_gosucave));
+            mdata.add(new Mdata("목계솔밭", R.drawable.mokgyefield));
+            mdata.add(new Mdata("도담삼봉", R.drawable.chungbuk_dodam));
+            mdata.add(new Mdata("문암생태공원", R.drawable.chungbuk_munampark));
+        }
+        else if(code == 17) {
+
+        }
+        else if(code == 18) {
+
+        }
+        else if(code == 19) {
+
+        }
+
+
 
 
 

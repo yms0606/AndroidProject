@@ -15,8 +15,8 @@ public class SeoulActivity extends AppCompatActivity {
         setContentView(R.layout.activity_seoul);
         getSupportActionBar().setTitle("서울");
 
-        Button btHondae = findViewById(R.id.hongdae);
-        btHondae.setOnClickListener(new View.OnClickListener() {
+        Button btsongpa = findViewById(R.id.songpa);
+        btsongpa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
@@ -24,17 +24,17 @@ public class SeoulActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button btGeondae = findViewById(R.id.geondae);
-        btGeondae.setOnClickListener(new View.OnClickListener() {
+        Button btjongno = findViewById(R.id.jongno);
+        btjongno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
-                intent.putExtra("listCode",7);
+                intent.putExtra("listCode",9);
                 startActivity(intent);
             }
         });
-        Button btNamsan = findViewById(R.id.namsan);
-        btNamsan.setOnClickListener(new View.OnClickListener() {
+        Button btjunggu = findViewById(R.id.junggu);
+        btjunggu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
@@ -42,12 +42,12 @@ public class SeoulActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button btGangnam = findViewById(R.id.gangnam);
-        btGangnam.setOnClickListener(new View.OnClickListener() {
+        Button btgangnam = findViewById(R.id.gangnam);
+        btgangnam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ListActivity.class);
-                intent.putExtra("listCode",9);
+                intent.putExtra("listCode",7);
                 startActivity(intent);
             }
         });
