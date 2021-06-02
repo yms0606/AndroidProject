@@ -150,12 +150,40 @@ public class ListFragment extends Fragment {
             mdata.add(new Mdata("문암생태공원", R.drawable.chungbuk_munampark));
         }
         else if(code == 17) {
-
+            mdata.add(new Mdata("문화공간 기린", R.drawable.jeonju_cultureplace));
+            mdata.add(new Mdata("전주한옥마을", R.drawable.jeonju_hanok));
+            mdata.add(new Mdata("전동성당 ", R.drawable.jeonju_sungdang));
         }
         else if(code == 18) {
-
+            mdata.add(new Mdata("아쿠아플라넷", R.drawable.yeosu_acouaplanet));
+            mdata.add(new Mdata("예술랜드", R.drawable.yeosu_artland));
+            mdata.add(new Mdata("여수밤바다 ", R.drawable.yeosu_bambada));
+            mdata.add(new Mdata("테이베어 뮤지엄 ", R.drawable.yeosu_teddybear));
         }
         else if(code == 19) {
+            mdata.add(new Mdata("동백섬", R.drawable.busan_baekseom));
+            mdata.add(new Mdata("감천문화마을", R.drawable.busan_gamcheon));
+            mdata.add(new Mdata("해운대 ", R.drawable.busan_haeundae));
+            mdata.add(new Mdata("장림포구 ", R.drawable.busan_jangnimpogu));
+            mdata.add(new Mdata("남포동 트리 ", R.drawable.busan_nampodong));
+            mdata.add(new Mdata("을숟고 생태공원", R.drawable.busan_park));
+            mdata.add(new Mdata("더베이 ", R.drawable.busan_thebey));
+
+        }
+        else if(code == 20) {
+            mdata.add(new Mdata("동성로", R.drawable.daegu_dongseonglo));
+            mdata.add(new Mdata("이월드", R.drawable.daegu_eworld));
+            mdata.add(new Mdata("서문시장", R.drawable.daegu_seomunsijang));
+            mdata.add(new Mdata("스파크랜드 ", R.drawable.daegu_sparkland));
+            mdata.add(new Mdata("대구계단성당", R.drawable.daegu_sungdang));
+
+        }
+        else if(code == 21) {
+            mdata.add(new Mdata("대왕암공원", R.drawable.ulsan_bigpark));
+            mdata.add(new Mdata("울산대교", R.drawable.ulsan_bridge));
+            mdata.add(new Mdata("자수정 동굴나라 ", R.drawable.ulsan_caveworld));
+            mdata.add(new Mdata("은하수길", R.drawable.ulsan_galaxyload));
+            mdata.add(new Mdata("양산 통도환타지아 ", R.drawable.ulsan_tongdo));
 
         }
 
