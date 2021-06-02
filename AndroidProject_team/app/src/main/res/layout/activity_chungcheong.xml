@@ -17,14 +17,14 @@
             android:layout_height="415dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="100dp"
-            android:src="@drawable/chungcheongmap" />
+            android:src="@drawable/chungcheong" />
 
         <Button
             android:id="@+id/sejong"
             android:layout_width="77dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="170dp"
-            android:layout_marginTop="280dp"
+            android:layout_marginTop="300dp"
             android:backgroundTint="#fff"
             android:text="세종"
             android:textColor="#000"
@@ -34,7 +34,7 @@
             android:layout_width="77dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="350dp"
             android:backgroundTint="#fff"
             android:text="충남"
             android:textColor="#000"
@@ -43,7 +43,7 @@
             android:id="@+id/chungbuk"
             android:layout_width="77dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="3000dp"
+            android:layout_marginLeft="260dp"
             android:layout_marginTop="280dp"
             android:backgroundTint="#fff"
             android:text="충북"

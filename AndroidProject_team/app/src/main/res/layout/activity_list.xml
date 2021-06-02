@@ -31,15 +31,19 @@
         android:layout_marginTop="50dp" />
 
     <Button
+        android:fontFamily="@font/uhbeebold"
+        android:textSize="20dp"
         android:id="@+id/write"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="550dp"
         android:backgroundTint="#fff"
-        android:text="기록"
+        android:text="write"
         android:textColor="#000" />
     <Button
+        android:textSize="20dp"
+        android:fontFamily="@font/uhbeebold"
         android:id="@+id/goList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

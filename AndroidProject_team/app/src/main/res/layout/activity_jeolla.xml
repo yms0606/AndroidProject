@@ -8,7 +8,12 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="415dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/junla" />
         <Button
             android:id="@+id/jeonju"
             android:layout_width="wrap_content"
@@ -25,16 +30,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="300dp"
-            android:layout_marginTop="430dp"
+            android:layout_marginTop="330dp"
             android:backgroundTint="#fff"
             android:text="여수"
             android:textColor="#000"
             android:textSize="10dp" />
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/jeollamap" />
+
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

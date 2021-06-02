@@ -43,6 +43,7 @@
     </LinearLayout>
 
     <TextView
+        android:fontFamily="@font/uhbeebold"
         android:layout_marginBottom="20dp"
         android:background="@drawable/listdesign"
         android:text="Title"
@@ -54,6 +55,7 @@
         android:hint="title" />
 
     <TextView
+        android:fontFamily="@font/uhbeebold"
         android:background="@drawable/listdesign"
         android:textSize="20dp"
         android:text="text"

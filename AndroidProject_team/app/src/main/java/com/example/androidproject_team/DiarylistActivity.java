@@ -81,7 +81,8 @@ public class DiarylistActivity extends AppCompatActivity {
             case 7: place = "강남"; break; case 8: place = "중구"; break; case 9: place = "종로"; break;
             case 10: place = "파주"; break; case 11: place = "광명"; break; case 12: place = "포천"; break;
             case 13: place = "안산"; break; case 14: place = "충남"; break; case 15: place = "세종"; break;
-            case 16: place = "충북"; break;
+            case 16: place = "충북"; break; case 17: place = "전주"; break; case 18: place = "여수"; break;
+            case 19: place = "부산"; break; case 20: place = "대구"; break; case 21: place = "울산"; break;
         }
     }
 }

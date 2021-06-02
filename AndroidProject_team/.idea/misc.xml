@@ -7,27 +7,27 @@
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/drawable/ic_launcher_background.xml" value="0.8" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/drawable/listdesign.xml" value="0.8" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_busan.xml" value="0.2" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_chungcheong.xml" value="0.23055555555555557" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_diary.xml" value="0.8" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_chungcheong.xml" value="0.264" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_diary.xml" value="0.2" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_diarylist.xml" value="0.8" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_gangown.xml" value="0.8" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_gyeonggi.xml" value="0.8" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_gyeongsang.xml" value="0.8" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_gangown.xml" value="0.264" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_gyeonggi.xml" value="0.264" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_gyeongsang.xml" value="0.1842410196987254" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_jeolla.xml" value="0.2" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_junju.xml" value="0.2" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_list.xml" value="0.8" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_listdetail.xml" value="0.8" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_list.xml" value="0.176" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_listdetail.xml" value="0.2" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_main.xml" value="0.8" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_memolist.xml" value="0.8" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_memolist.xml" value="0.176" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_seoul.xml" value="0.8" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_splash.xml" value="0.8" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/cardview.xml" value="0.8" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/cardview.xml" value="0.38405797101449274" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/chungcheong_activity.xml" value="0.25" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/clickarea_activity.xml" value="0.25" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/customlist.xml" value="0.8" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/fragment_list.xml" value="0.2" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/customlist.xml" value="0.264" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/fragment_list.xml" value="0.1394736842105263" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/fragment_quest.xml" value="0.8" />
-        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/fragment_todo.xml" value="0.264" />
+        <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/fragment_todo.xml" value="0.2" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/gangown_activity.xml" value="0.25" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/gyeonggi_activity.xml" value="0.25" />
         <entry key="..\:/Users/msi/Desktop/And_project/AndroidProject_team/app/src/main/res/layout/gyeongsang_activity.xml" value="0.25" />
@@ -38,7 +38,7 @@
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
