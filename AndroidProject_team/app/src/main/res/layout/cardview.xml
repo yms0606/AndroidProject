@@ -19,13 +19,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/listdesign"
                 android:layout_marginTop="10dp"
                 android:id="@+id/image"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"/>
             <TextView
+                android:text="title"
                 android:textSize="20dp"
-                android:fontFamily="@font/uhbeebold"
+                android:fontFamily="@font/maplestorybold"
                 android:layout_marginLeft="30dp"
                 android:id="@+id/text"
                 android:layout_marginTop="220dp"

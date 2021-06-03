@@ -31,18 +31,24 @@
                 android:layout_weight="1" />
 
             <Button
+                android:background="@drawable/btdesign"
+                android:fontFamily="@font/maplestorybold"
                 android:id="@+id/buttonAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="add" />
 
             <Button
+                android:background="@drawable/btdesign"
+                android:fontFamily="@font/maplestorybold"
                 android:id="@+id/buttonDelete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="delete" />
 
             <Button
+                android:background="@drawable/btdesign"
+                android:fontFamily="@font/maplestorybold"
                 android:id="@+id/buttonSave2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,6 +62,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:fontFamily="@font/maplestorybold"
                 android:id="@+id/todolist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -63,6 +70,7 @@
                 android:text="    To-do List" />
 
             <TextView
+                android:fontFamily="@font/maplestorybold"
                 android:id="@+id/success2"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"

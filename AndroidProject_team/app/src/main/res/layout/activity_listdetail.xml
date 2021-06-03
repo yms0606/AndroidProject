@@ -1,49 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DiaryActivity"
-    android:orientation="vertical"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp">
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:background="#81D4FA"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:textColor="#fff"
+            android:fontFamily="@font/sdsoutline"
+            android:gravity="center"
+            android:text="Trip Friend"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/listdesign"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="4dp"
         android:layout_marginBottom="30dp"
         android:orientation="horizontal"
         >
 
         <ImageView
+            android:background="@drawable/listdesign"
             android:id="@+id/img1_d"
-            android:layout_width="100dp"
+            android:layout_width="97dp"
             android:layout_height="100dp"
             android:src="@drawable/index1" />
 
         <ImageView
+            android:background="@drawable/listdesign"
             android:id="@+id/img2_d"
-            android:layout_width="100dp"
+            android:layout_width="97dp"
             android:layout_height="100dp" />
 
         <ImageView
+            android:background="@drawable/listdesign"
             android:id="@+id/img3_d"
-            android:layout_width="100dp"
+            android:layout_width="97dp"
             android:layout_height="100dp" />
 
         <ImageView
+            android:background="@drawable/listdesign"
             android:id="@+id/img4_d"
-            android:layout_width="100dp"
+            android:layout_width="97dp"
             android:layout_height="100dp" />
     </LinearLayout>
 
     <TextView
-        android:fontFamily="@font/uhbeebold"
+        android:paddingStart="10dp"
+        android:fontFamily="@font/maplestorybold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/listdesign"
         android:text="Title"
@@ -55,7 +77,8 @@
         android:hint="title" />
 
     <TextView
-        android:fontFamily="@font/uhbeebold"
+        android:padding = "10dp"
+        android:fontFamily="@font/maplestorybold"
         android:background="@drawable/listdesign"
         android:textSize="20dp"
         android:text="text"

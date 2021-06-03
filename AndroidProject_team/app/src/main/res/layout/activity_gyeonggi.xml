@@ -5,7 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GyeonggiActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:background="#81D4FA"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" >
 
+        <TextView
+            android:textColor="#fff"
+            android:fontFamily="@font/sdsoutline"
+            android:gravity="center"
+            android:text="Trip Friend"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.appcompat.widget.Toolbar>
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
@@ -20,48 +35,56 @@
             android:src="@drawable/gyeonggi" />
 
         <Button
+            android:fontFamily="@font/maplestorybold"
             android:id="@+id/paju"
+            android:background="@drawable/btdesign"
             android:layout_width="77dp"
-            android:layout_height="wrap_content"
+            android:layout_height="29dp"
+            android:textColor="#fff"
+            android:textSize="15dp"
             android:layout_marginLeft="140dp"
             android:layout_marginTop="240dp"
-            android:backgroundTint="#fff"
             android:text="파주"
-            android:textColor="#000"
-            android:textSize="10dp" />
+             />
 
         <Button
+            android:fontFamily="@font/maplestorybold"
             android:id="@+id/gwangmyeong"
+            android:background="@drawable/btdesign"
             android:layout_width="77dp"
-            android:layout_height="wrap_content"
+            android:layout_height="29dp"
+            android:textColor="#fff"
+            android:textSize="15dp"
             android:layout_marginLeft="160dp"
             android:layout_marginTop="300dp"
-            android:backgroundTint="#fff"
             android:text="광명"
-            android:textColor="#000"
-            android:textSize="10dp" />
+             />
 
         <Button
+            android:fontFamily="@font/maplestorybold"
             android:id="@+id/pocheon"
+            android:background="@drawable/btdesign"
             android:layout_width="77dp"
-            android:layout_height="wrap_content"
+            android:layout_height="29dp"
+            android:textColor="#fff"
+            android:textSize="15dp"
             android:layout_marginLeft="220dp"
             android:layout_marginTop="200dp"
-            android:backgroundTint="#fff"
             android:text="포천"
-            android:textColor="#000"
-            android:textSize="10dp"/>
+            />
 
         <Button
+            android:fontFamily="@font/maplestorybold"
             android:id="@+id/ansan"
+            android:background="@drawable/btdesign"
             android:layout_width="77dp"
-            android:layout_height="wrap_content"
+            android:layout_height="29dp"
+            android:textColor="#fff"
+            android:textSize="15dp"
             android:layout_marginLeft="220dp"
             android:layout_marginTop="360dp"
-            android:backgroundTint="#fff"
             android:text="안산"
-            android:textColor="#000"
-            android:textSize="10dp"/>
+            />
 
     </RelativeLayout>
 

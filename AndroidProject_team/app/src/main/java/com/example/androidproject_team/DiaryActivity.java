@@ -3,6 +3,7 @@ package com.example.androidproject_team;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.room.Room;
 
 import android.content.Context;
@@ -53,7 +54,8 @@ public class DiaryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diary);
-        getSupportActionBar().setTitle("다이어리 작성");
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         img1 = findViewById(R.id.img1);
         img2 = findViewById(R.id.img2);
@@ -69,7 +71,9 @@ public class DiaryActivity extends AppCompatActivity {
         userRepository = db.userRepository();
         List<Item> it = userRepository.findAll();
         //Log.d("size",it.get(0).getTitle() + " "+it.get(0).getText());
-        //userRepository.delete(it.get(0));
+        userRepository.delete(it.get(0));
+        userRepository.delete(it.get(1));
+        userRepository.delete(it.get(2));
         Log.d("size",String.valueOf(it.size()));
         */
 

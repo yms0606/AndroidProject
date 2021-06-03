@@ -1,6 +1,7 @@
 package com.example.androidproject_team;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +14,8 @@ public class GyeonggiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gyeonggi);
-        getSupportActionBar().setTitle("경기도");
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         Button btPaju = findViewById(R.id.paju);
         btPaju.setOnClickListener(new View.OnClickListener() {

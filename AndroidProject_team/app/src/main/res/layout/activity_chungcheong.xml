@@ -5,7 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ChungcheongActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:background="#81D4FA"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" >
 
+        <TextView
+            android:textColor="#fff"
+            android:fontFamily="@font/sdsoutline"
+            android:gravity="center"
+            android:text="Trip Friend"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.appcompat.widget.Toolbar>
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
@@ -20,35 +35,38 @@
             android:src="@drawable/chungcheong" />
 
         <Button
+            android:fontFamily="@font/maplestorybold"
             android:id="@+id/sejong"
+            android:background="@drawable/btdesign"
             android:layout_width="77dp"
-            android:layout_height="wrap_content"
+            android:layout_height="29dp"
+            android:textSize="15dp"
             android:layout_marginLeft="170dp"
             android:layout_marginTop="300dp"
-            android:backgroundTint="#fff"
             android:text="세종"
-            android:textColor="#000"
-            android:textSize="10dp" />
+            android:textColor="#fff" />
         <Button
+            android:fontFamily="@font/maplestorybold"
             android:id="@+id/chungnam"
+            android:background="@drawable/btdesign"
             android:layout_width="77dp"
-            android:layout_height="wrap_content"
+            android:layout_height="29dp"
+            android:textColor="#fff"
+            android:textSize="15dp"
             android:layout_marginLeft="200dp"
             android:layout_marginTop="350dp"
-            android:backgroundTint="#fff"
-            android:text="충남"
-            android:textColor="#000"
-            android:textSize="10dp" />
+            android:text="충남" />
         <Button
+            android:fontFamily="@font/maplestorybold"
             android:id="@+id/chungbuk"
+            android:background="@drawable/btdesign"
             android:layout_width="77dp"
-            android:layout_height="wrap_content"
+            android:layout_height="29dp"
+            android:textColor="#fff"
+            android:textSize="15dp"
             android:layout_marginLeft="260dp"
             android:layout_marginTop="280dp"
-            android:backgroundTint="#fff"
-            android:text="충북"
-            android:textColor="#000"
-            android:textSize="10dp" />
+            android:text="충북" />
 
     </RelativeLayout>
 

@@ -6,19 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".ListActivity"
     android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:background="#81D4FA"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:textColor="#fff"
+            android:fontFamily="@font/sdsoutline"
+            android:gravity="center"
+            android:text="Trip Friend"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.appcompat.widget.Toolbar>
     <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="?attr/actionBarSize"
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp">
         <com.google.android.material.tabs.TabItem
+            android:fontFamily="@font/maplestorybold"
             android:text="List"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
         <com.google.android.material.tabs.TabItem
+            android:fontFamily="@font/maplestorybold"
             android:text="Quest"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
         <com.google.android.material.tabs.TabItem
+            android:fontFamily="@font/maplestorybold"
             android:text="Todo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
@@ -28,11 +48,11 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="550dp"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="110dp" />
 
     <Button
-        android:fontFamily="@font/uhbeebold"
-        android:textSize="20dp"
+        android:fontFamily="@font/maplestorybold"
+        android:textSize="15dp"
         android:id="@+id/write"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,8 +62,8 @@
         android:text="write"
         android:textColor="#000" />
     <Button
-        android:textSize="20dp"
-        android:fontFamily="@font/uhbeebold"
+        android:textSize="15dp"
+        android:fontFamily="@font/maplestorybold"
         android:id="@+id/goList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

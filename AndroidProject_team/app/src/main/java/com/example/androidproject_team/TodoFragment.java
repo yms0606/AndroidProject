@@ -93,14 +93,14 @@ public class TodoFragment extends Fragment {
                 SparseBooleanArray checkedItems = listview.getCheckedItemPositions();
                 int count = adapter.getCount();
                 int value = 0;
-
                 for (int i = count - 1; i >= 0; i--) {
                     if (checkedItems.get(i)) {
                         value += 1;
                     }
                 }
+                double per = (double) value / (double) count * 100.0;
                 ProgressBar progress = (ProgressBar) v.findViewById(R.id.progress) ;
-                progress.setProgress((value/count)*100) ;
+                progress.setProgress((int)per) ;
                 adapter.notifyDataSetChanged();
             }
         });

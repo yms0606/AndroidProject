@@ -5,83 +5,106 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/koreamap">
+    android:background="@drawable/koream">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="#81D4FA"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:textColor="#fff"
+            android:fontFamily="@font/sdsoutline"
+            android:gravity="center"
+            android:text="Trip Friend"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.appcompat.widget.Toolbar>
 
     <Button
+        android:fontFamily="@font/maplestorybold"
         android:id="@+id/BtChungcheong"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
+        android:background="@drawable/btdesign"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="296dp"
-        android:backgroundTint="#fff"
+        android:layout_marginTop="310dp"
         android:text="충청"
-        android:textColor="#000"
-        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:fontFamily="@font/maplestorybold"
         android:id="@+id/BtSeoul"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
+        android:background="@drawable/btdesign"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
         android:layout_marginStart="112dp"
-        android:layout_marginTop="112dp"
-        android:backgroundTint="#fff"
+        android:layout_marginTop="200dp"
         android:text="서울"
-        android:textColor="#000"
-        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:fontFamily="@font/maplestorybold"
         android:id="@+id/BtGyeongsang"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
+        android:background="@drawable/btdesign"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
         android:layout_marginStart="264dp"
-        android:layout_marginTop="408dp"
-        android:backgroundTint="#fff"
+        android:layout_marginTop="490dp"
         android:text="경상"
-        android:textColor="#000"
-        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:fontFamily="@font/maplestorybold"
         android:id="@+id/BtGangown"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
+        android:background="@drawable/btdesign"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
         android:layout_marginStart="224dp"
-        android:layout_marginTop="104dp"
-        android:backgroundTint="#fff"
+        android:layout_marginTop="170dp"
         android:text="강원"
-        android:textColor="#000"
-        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:fontFamily="@font/maplestorybold"
         android:id="@+id/BtJeolla"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
+        android:background="@drawable/btdesign"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="408dp"
-        android:backgroundTint="#fff"
+        android:layout_marginTop="400dp"
         android:text="전라"
-        android:textColor="#000"
-        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:fontFamily="@font/maplestorybold"
         android:id="@+id/BtGyeonggi"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
+        android:background="@drawable/btdesign"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="176dp"
-        android:backgroundTint="#fff"
+        android:layout_marginTop="250dp"
         android:text="경기"
-        android:textColor="#000"
-        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

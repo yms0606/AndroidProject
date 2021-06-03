@@ -5,7 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GyeongsangActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:background="#81D4FA"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" >
 
+        <TextView
+            android:textColor="#fff"
+            android:fontFamily="@font/sdsoutline"
+            android:gravity="center"
+            android:text="Trip Friend"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.appcompat.widget.Toolbar>
 <RelativeLayout
     android:id="@+id/relativeLayout2"
     android:layout_width="match_parent"
@@ -20,37 +35,43 @@
         android:src="@drawable/gyeongsang" />
 
     <Button
+        android:fontFamily="@font/maplestorybold"
         android:id="@+id/busan"
+        android:background="@drawable/btdesign"
         android:layout_width="77dp"
-        android:layout_height="wrap_content"
+        android:layout_height="29dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
         android:layout_marginLeft="250dp"
         android:layout_marginTop="410dp"
-        android:backgroundTint="#fff"
         android:text="부산"
-        android:textColor="#000"
-        android:textSize="10dp" />
+         />
 
     <Button
+        android:fontFamily="@font/maplestorybold"
         android:id="@+id/daegu"
+        android:background="@drawable/btdesign"
         android:layout_width="77dp"
-        android:layout_height="wrap_content"
+        android:layout_height="29dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
         android:layout_marginLeft="160dp"
         android:layout_marginTop="300dp"
-        android:backgroundTint="#fff"
         android:text="대구"
-        android:textColor="#000"
-        android:textSize="8dp" />
+         />
 
     <Button
+        android:fontFamily="@font/maplestorybold"
         android:id="@+id/ulsan"
+        android:background="@drawable/btdesign"
         android:layout_width="77dp"
-        android:layout_height="wrap_content"
+        android:layout_height="29dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
         android:layout_marginLeft="260dp"
         android:layout_marginTop="350dp"
-        android:backgroundTint="#fff"
         android:text="울산"
-        android:textColor="#000"
-        android:textSize="8dp" />
+        />
 
 </RelativeLayout>
 
